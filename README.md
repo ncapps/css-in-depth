@@ -49,10 +49,48 @@
     - Don't confuse `initial` and `auto` values
     - Becareful with shorthand properties overriding property values
 
+### Chapter 2. Working with relative units
+- Pixels are *absolute* units
+- `em` and `rem` are *relative* units
+- *responsive* styles update based on the size of the browser window
+- CSS pixel does not strictly equate to a monitor's pixel
+- `Em` is a measure used in typography - referencing a specified font size
+- Using ems can be convenient when setting properties like `padding, height, width, or border-radius` because these will scale evenly with the element if it inherits different font sizes
+- `font-size` ems are derived from the *inherited* font size
+- If you know the pixel-based font size you want, but want to specify the declaration in ems: divide the desired pixel size by the parent (inherited) pixel size
+- For most browsers, the default font size is 16px (keyword value `medium`)
+- Ems can produce unexpected results when you use them to specify font sizes of multiple nested elements - to know the exact value for each element, you'll need to know it's inherited font size
+- When the browser parses an HTML document, it creates a representation in memory of all the elements on the page. This representation is called the *DOM* (Document Object Model)
+- The `<html>` element is the top-level (root) node. It's child nodes are `<head>` and `<body>`
+- *Rem* is short for root em. Instead of being relative to the current element, rems are relative to the root element
+- Always specify font sizes with relative units or percentages for improved accessibility
+- Rems simplify a lot of the complexities involved with ems. 
+- Try to use rems for font sizes, pixels for borders, and ems for most other measures - this way font sizes are predictable but you still get the power of ems scaling your padding and margins
+- The `>` in a selector is a *direct descendant combinator* - it targets a child element
+- You can use *media queries* to change rulesets depending on the screen size
+- *Viewport-relative units* define lengths relative to the browser's viewport
+    - *vh* - 1/100th of the viewport height
+    - *vw* - 1/100th of the viewport width
+    - *vmin* - 1/100th of the smaller dimension (height or width)
+    - *vmax* - 1/100th of the larger dimension (height or width)
+- *Viewport* is the framed area in the browser window where the web page is visible - this excludes the address bar, toolbars, and status bar
+- Viewport-relative lengths are great for things like making a large hero image fill the screen
+- The `calc()` function lets you do basic arithmetic with two or more values
+- Use `calc()` and `vw` for `font-size` to produce a responsive design that scales fluidly without the use of hard-coded breakpoints
+- Some properties allow for *unitless* values (e.g., `line-height, font-weight`)
+- When an element has a value defined using a *length* (px, em, rem), its **computed** value is inherited by child elements
+- *Length* is the formal term for a CSS value that denotes a distance measurement. Lengths are defined as *absolute* or *relative*
+- When you use a unitless number, that **declared** value is inherited, meaning its computed value is recalculated for each inheriting child element
+- Custom properties or *variables* let you define a value in one place and reuse that value throughout the stylesheet
+- Variables must be declared inside a declaration block
+- The `var()` function accepts a second parameter, which specifies a fallback value
+- Custom properties behave as a scoped variable because the values are inherited by descendant elements
 
-
-
-
+**Summary**
+- Embrace the use of relative units, allowing the page's structure to determine the meaning of your styles
+- Favor the use of rems for font size, but selectively use ems for simple scaling of components on the page
+- You can make your entire page scale responsively with viewport-relative units and not use any media queries!
+- Use unitless values when specifying line height
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
