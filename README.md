@@ -92,5 +92,65 @@
 - You can make your entire page scale responsively with viewport-relative units and not use any media queries!
 - Use unitless values when specifying line height
 
+### Chapter 3. Mastering the box model
+- *Document flow* and *box model* are the basic rules that determine the position and size of elements on the page
+- When you set the width or height of an element, you're specifying the width or height of it's content; any padding, border, and margins are additional
+- Although there's a place for trial and error in CSS, typically that's for choices that are stylistic in nature and not for forcing things to fit into position
+- CSS allows you to adjust the box model behavior with the `box-sizing` property
+- The `border-box` value make the `height` and `width` properties set the combined size of the content, padding and border
+- em-based gutters are consistent and explicit in the code
+- Working with element height is different than working with element width, typically it's best to avoid setting explicit heights on elements
+- Normal document flow is designed to work with a constrained width and an unlimited height
+- Contents fill the width of the viewport and line wrap as necessary
+- Height of a container depends on its contents, not by the container itself
+- *Normal document flow* refers to the default layout behavior of elements on the page - inline elements flow along with the text from left to right. Block-level elements fall on individual lines - with a line break above and below
+- When you explicitly set an element's height, you run the risk of it's contents *overflowing* the container
+- `overflow` properties include:
+    1. `visible` (default) - All content is visible, even when it overflows
+    2. `hidden` - Content that overflows the container's padding edge is clipped
+    3. `scroll` - Scrollbars are added to the container so the user can scroll to see the remaining content
+    4. `auto` - Scrollbars are added to the container only if the contents overflow
+- You can control horizontal overflow with the `overflow-x` property or vertical with `overflow-y`
+- Percentage refers to the size of an element's containing block
+- Common designs call for equal-height columns
+- HTML table attributes `colspan` and `rowspan` have no equivalent - and floats, flexboxes, and inline-blocks can layout content in ways that tables cannot
+- Accomplishing a two-column layout with equal-height columns can be done with a *flexbox* - by default a flexbox produces elements of equal height
+- Favor the use of a flexbox instead of a table layout
+- By applying `display: flex` to a container, it becomes as *flex container*, it's child elements will become the same height by default
+- Never explicitly set the height of an element unless you have no other choice. Always seek an alternative first. Setting a height invariably leads to further complications.
+- Instead of defining a height, you can use `min-height` and `max-height` to specify a minimum or maximum value - allowing the element to size natrually within those bounds
+- Vertical centering in CSS is a notorious problem
+- A `vertical-align` declaration only affects inline and table-cell elements
+- A lot of trouble comes from setting the height of a container to a constant value and then attempting to center a dynamically sized piece of content inside it - Instead, try to achieve the desired effect by allowing the browser to determine heights naturally
+- Equal top and bottom padding vertically centers an element's content without a fixed height
+- **Guide to vertical centering**
+ - For natural height containers - Apply an equal top and bottom padding to the container
+ - For specific height containers - Use `display: table-cell` and `vertical-align: middle` on the container
+ - Use flexbox
+ - For inner content that is one line of text - Set a tall line height equal to the desired container height, this forces the container to grow to contain the line height. `inline-block` may be required
+ - See [howtocenterincss.com](http://howtocenterincss.com)
+- Unlike padding and border - you can assign a negative value to margins
+- Negative left or top margins pull the element leftward or upward
+- Adding negative right or bottom margins will pull the succeeding element(s) leftward or upward (to overlap)
+- When top and/or bottom margins are adjoining, they overlap, combining to form a single margin - this is referred to as *collapsing*
+- Any adjacent top and bottom margins will collapse together. If you add an empty, unstyled `div` to the page, its own top and bottom margins will collapse. Left and right margins don't collapse
+- There are multiple ways to prevent margins from collapsing
+ - Appling `overflow: auto` to the container prevents margins inside the container from collapsing with those outside the container.
+ - Adding a border or padding between two margin stops them from collapsing
+ - Margins won't collapse to the outside of a container that is floated, that is an inline block, or that has an absolut or fixed position
+ - When using a flexbox, margins won't collapse between elements that are part of the flex layout
+ - Elements with a `table-cell` display don't have a margin, so they won't collapse
+- Use the lobotomized owl to add top margins to elements throughout a page `* + *`. It targets any element that immediately follows any other element. It selects all elements on the page that aren't the first child of their parent.
+- Using the lobotomized owl has tradeoffs. It simplifies margins throughout your page, but you'll have to override it in places where you don't want it to appy
+
+**Summary**
+- Always use a universal `border-box` fit for predictable element sizing
+- Avoid explicitly setting the height of an element to avoid overflow issues
+- Use modern layout techniques liek `display: table` or a flexbox to produce columns of equal height or to center content vertically
+- If your margins behave oddly, take steps to prevent margins from collapsing
+- Consider using the lobotomized owl selector to globally apply margins betwen stacked elements
+
+
+
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
