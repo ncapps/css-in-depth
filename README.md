@@ -150,6 +150,30 @@
 - If your margins behave oddly, take steps to prevent margins from collapsing
 - Consider using the lobotomized owl selector to globally apply margins betwen stacked elements
 
+## Part 2. Mastering layout
+### Chapter 4. Making sense of floats
+- The three most important methods to alter document flows - *floats*, *flexbox*, and *grid layout*
+- *Positioning* is primarily used for stacking elements in front of one another
+- A *float* pulls an element to one side of it's container, allowing the document flow to wrap around it. A floated element is removed from the normal document flow and pulled to the edge of the container.
+- It's usually easiest to lay out the large regions of a page first, then work your way to the smaller elements within
+- The *double container* pattern is common for centering content on a page. It can be achieved by placing your content inside two nested containers and then set margins on the inner container to position within the outer one.
+- *pseudo-element* - Special selectors that target certain parts of the document. These begin with a double:color (::) syntax. The most common pseudo-elements are `::before` and `::after`, which are used to insert content at the beginning or end of an element.
+- The *media object* pattern includes an image on one side and a block of text beside it.
+- A *block formatting context* (BFC) is a region of the page in which elements are laid out - the contents inside a BFC will not overlap or interact with elements on the outside
+- Using `overflow: auto` for the BFC is generally the simplest approach
+- A popular way to facilitate code reuse is to implement *grid system*. The general principle is to put a row container around one or more column containers.
+- *CSS framework* - a library of prebuilt CSS code that provides styles for patterns common in web development.
+- A *grid system* is usually defined to hold a certain number of columns in each row; this is usually 12, but can vary. The child elements of a row may have a width anywhere from one column up to 12 columns wide
+- Twelve is a good number of columns because it is divisiable by two, three, four, and six, which provides a lot of flexibility
+
+**Summary**
+- Floats exist to allow text to wrap around an element
+- Use a *clearfix* to contain floated elements
+- Three tricks of block formatting context: containing floats, prevent margin collapse, and prevent document flow from wrapping around a floated element
+- Use the double container pattern to center page contents
+- Use the media object pattern to position descriptive text alongside an image
+- Use a grid system to create a wide array of page layouts
+
 
 
 ## Acknowledgements
