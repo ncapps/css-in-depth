@@ -174,7 +174,27 @@
 - Use the media object pattern to position descriptive text alongside an image
 - Use a grid system to create a wide array of page layouts
 
-
+### Chapter 5. Flexbox
+- Flexbox (Flexible Box Layout) - can be more predictable and offers more specific control than floats. It also offers a simple solution for vertical centering adn equal height columns
+- Applying `display: flex` to an element turns it into a *flex container* and its direct children are *flex items*
+- Flexbox layout is defined in terms of the *main axis* and *cross axis*. The terms *start* and *end* are used rather than left, right, top, bottom.
+- Direct descendant combinators `>` allow you to target direct child elements
+- Flexbox provides more options for sizing and spacing than the familiar `margin`, `width`, and `height` properties can offer
+- The `flex` property is shorthand for three different sizing properties:
+    1. `flex-basis` - an initial "main size" of an element
+    2. `flex-grow` - remaining space in a flex container will be consumed by flex items based on their `flex-grow` values. 
+    3. `flex-shrink` - determines if a flex item should shrink to prevent overflow
+- The `flex-direction` property provides the ability to shift the direction of the axes
+- In general, you'll begin a flexbox with a the following methods:
+    1. Identify a container and its items and use `display: flex` on the container
+    2. If necessary, set the `flex-direction` on the container
+    3. Declare margins and/or `flex` values for the flex items where necessary to control their size
+**Summary*
+- Use flexbox for versatile, easy-to-control layout of page content
+- Use `flex` to specify flex item size combinations
+- Use nested flexboxes to piece together more complicated layouts and to fill the heights of naturally sized boxes
+- Flexbox automatically creates columns of equal height
+- Use `align-items` or `align-self` to vertically center a flex item inside its flex container
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
