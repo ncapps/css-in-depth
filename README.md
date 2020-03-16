@@ -215,6 +215,12 @@
 - Use auto-fill/auto-fit and the implicit grid for layouts with an unknown number of grid items
 - Use feature queries for progressive enhancement
 
+### Chapter 7. Positioning and stacking contexts
+- Positioning removes elements from the document flow entirely - the initial value of the `position` property is `static`
+- Applying `position: fixed` to an element allows you to position the element arbitrarily within the viewport
+- Fixed positioning lets your position an element relative to the viewport. The viewport is its *containing block*.
+- The containing block for *absolute positioning* is based on the closest positioned ancestor element.
+- If none of the element's ancestors are positioned, then the absolutely positioned element will be positioned based on the *initial containing block*. This is an area with dimensions equal to the viewport size, anchored at the top of the page.
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
