@@ -189,12 +189,32 @@
     1. Identify a container and its items and use `display: flex` on the container
     2. If necessary, set the `flex-direction` on the container
     3. Declare margins and/or `flex` values for the flex items where necessary to control their size
-**Summary*
+**Summary**
 - Use flexbox for versatile, easy-to-control layout of page content
 - Use `flex` to specify flex item size combinations
 - Use nested flexboxes to piece together more complicated layouts and to fill the heights of naturally sized boxes
 - Flexbox automatically creates columns of equal height
 - Use `align-items` or `align-self` to vertically center a flex item inside its flex container
+
+### Chapter 6. Grid layout
+- The CSS grid lets you define a two-dimensional layout of columns and rows and then place elements within the grid. 
+- As with flexbox, grid layout applies to two levels of the DOM hierarchy. An element with `display: grid` becomes a `grid container`. Its child elements then become `grid items`.
+- The unit `fr` represents each column's or row's *fraction unit*. this unit behaves similarly to the `flex-grow` factor in flexbox.
+- The `grid-gap` property defines the amount of space to add to the gutter between each grid cell.
+- Grid lines are numbered beginning with 1 on the top left. Negative numbers refer to the position from the bottom right.
+- Flexbox and grid are complementary
+    - Flexbox is basically one-dimensional, whereas grid is two-dimensional
+    - Flexbox works from the content out, whereas grid works from the layout in
+- When your designs call for an alignment of items in two dimensions, use `grid`. When you're only concerend with a one-directionaly flow, use `flexbox`
+- In practice, grid is used for most high-level layout of the page, and flexbox makes more sense for certain elements within each grid area
+
+**Summary**
+- Grid is excellent for a high-level layout of the web page
+- Use grid in conjunction with flexbox for a complete layout system
+- Use whichever grid syntax (numbered grid lines, named grid lines, or named grid areas) is the most intuitive for the given scenario
+- Use auto-fill/auto-fit and the implicit grid for layouts with an unknown number of grid items
+- Use feature queries for progressive enhancement
+
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
