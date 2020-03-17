@@ -221,6 +221,20 @@
 - Fixed positioning lets your position an element relative to the viewport. The viewport is its *containing block*.
 - The containing block for *absolute positioning* is based on the closest positioned ancestor element.
 - If none of the element's ancestors are positioned, then the absolutely positioned element will be positioned based on the *initial containing block*. This is an area with dimensions equal to the viewport size, anchored at the top of the page.
+- Elements with a higher z-index appear in front of elements with a lower z-index. Elements with a negative z-index appear behind static elements.
+- Applying a z-index to a positinoed element establishes a stacking context
+- If an element is stacked in front of a stacking context, no element within that stacking context can be brought in front of it
+- Use variables to keep track of z-indexes
+- Generally speaking, you should only using positioning when you need to stack elements in front of one another
+- *Sticky positioning* is a sort of a hybrid between relataive and fixed positioning: an element scrolls normally within the pge until it reaches a specified point on the screen, at which point it will "lock". A common use-case for this is the side-bar navigation.
+
+**Summary**
+- Use fixed positioning for modal dialogs
+- Use absolute positioning for dropdown menus, tooltips, and other dynamic interactions
+- Be aware of accessibility concerns when buidling these features
+- There are two gotchas of `z-index`: it only works on positioned elements and using it creates a new stacking context
+- Be aware of the potential pitfalls when creating multiple stacking contexts on a page
+- Keep an eye out for better browser support of sticking positioning
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)

@@ -16,7 +16,7 @@ const Modal = ({ onClose = (f) => f }) => (
       </button>
       <h2>Wombat Newsletter</h2>
       <p>
-          Sign up for our monthly newsletter. No spam. We promise!
+        Sign up for our monthly newsletter. No spam. We promise!
       </p>
       <form>
         <p>
@@ -47,13 +47,44 @@ export default function Ch7Modal() {
       <header className="top-banner">
         <div className="top-banner-inner">
           <p>
-          Find out what&apos;s going on at Wombat Coffee each
-          month. Sign up for our newsletter:
+            Find out what&apos;s going on at Wombat Coffee each
+            month. Sign up for our newsletter:
             <button type="button" onClick={openModal} id="open">Sign up</button>
           </p>
         </div>
       </header>
       {isModalOpen ? <Modal onClose={closeModal} /> : ''}
+      <div className="container">
+        <main className="col-main">
+          <nav>
+            <div className="dropdown">
+              <div className="dropdown-label">Main Menu</div>
+              <div className="dropdown-menu">
+                <ul className="submenu">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/coffees">Coffees</a></li>
+                  <li><a href="/brewers">Brewers</a></li>
+                  <li><a href="/specials">Specials</a></li>
+                  <li><a href="/about">About us</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <h1>Wombat Coffee Roasters</h1>
+        </main>
+
+        <aside className="col-sidebar">
+          <div className="affix">
+            <ul className="submenu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/coffees">Coffees</a></li>
+              <li><a href="/brewers">Brewers</a></li>
+              <li><a href="/specials">Specials</a></li>
+              <li><a href="/about">About us</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
     </>
   );
 }
