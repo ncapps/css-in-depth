@@ -236,5 +236,12 @@
 - Be aware of the potential pitfalls when creating multiple stacking contexts on a page
 - Keep an eye out for better browser support of sticking positioning
 
+### Chapter 8. Responsive design
+- The three key principles to responsive design:
+    1. A *mobile first approach to design* - Build the mobile version before you construct the desktop layout
+    2. The `@media` *at rule* - *Media queries* let you write styles that only apply under certain conditions
+    3. *The use of fluid layouts* - This approach allows containers to scale to different sizes based on the width of the viewport
+- 
+
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
