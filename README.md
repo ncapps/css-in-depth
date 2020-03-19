@@ -241,7 +241,19 @@
     1. A *mobile first approach to design* - Build the mobile version before you construct the desktop layout
     2. The `@media` *at rule* - *Media queries* let you write styles that only apply under certain conditions
     3. *The use of fluid layouts* - This approach allows containers to scale to different sizes based on the width of the viewport
-- 
+- *breakpoint* - A particular point at which the page styles change to provide the best possible layout for the screen size
+- Screen readers use certain HTML5 elemetns such as `<form>`, `<main>`, `<nav>`, and `<aside>` as *landmarks*
+- You should use `ems` for media query breakpoints. It's the only unit that performs consistently in all major browsers shoudl the user zoom the page or change the default font size
+- Using a `print` media query lets you control how your page will lay out if the user prints the page
+- [Responsive Patterns](https://bradfrost.github.io/this-is-responsive/patterns.html)
+- The best practice is to create a few copies of an image, each at a different resolution
+
+**Summary**
+- Always build your designs mobile first
+- Use media queries to progressively enhance the page at larger and larger viewports
+- Use fluid layouts that fit the screen at any browser size
+- Use responsive images to fit the bandwidth limitation of mobile devices
+- Don't forget to include your meta viewport tag
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)

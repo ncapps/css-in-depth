@@ -6,8 +6,9 @@ import React from 'react';
 // import Ch5 from './Ch5';
 // import Ch6 from './Ch6';
 // import Ch6Portfolio from './Ch6Portfolio';
-import Ch7Modal from './Ch7Modal';
+// import Ch7Modal from './Ch7Modal';
+import Ch8Responsive from './Ch8Responsive';
 
-const App = () => <Ch7Modal />;
+const App = () => <Ch8Responsive />;
 
 export default App;
