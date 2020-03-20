@@ -255,5 +255,33 @@
 - Use responsive images to fit the bandwidth limitation of mobile devices
 - Don't forget to include your meta viewport tag
 
+## Part 3. CSS at scale
+### Chapter 9. Modular CSS
+- *Modular CSS* means breaking the page into reusable component parts
+- Three main sections of your stylesheet: *base rules*, *module rules*, *utility classes*
+- *Encapsulation* - the grouping together of related functions and data to comprise an object. It's used to hide the state or values of a structured object so that outside parties cannot operate on them.
+- With encapsulation in mind, you'll define a module for each discrete component on the page: navigational menus, dialog boxes, progress bars, thumnail images, etc.
+- Every stylesheet begins with a set of generic rules that apply to the whole page; this is still necessary with modular CSS
+- Check out [normalize.css](https://necolas.github.io/normalize.css/) as a base style
+- You create a modifier by defining a new class name that begins with the module's name. A popular convention is to use two hyphens to indicate a modifier: `message--error`. The double-hypen syntax shows at a glance which part of the class is the module name and which part is the modifier.
+- Always keep all the code for a module together in a the same place. Then your stylesheet will consist of a series of modules.
+- When you need a module to look or behave differently, create a modifier class that can be applied directly to the specific element.
+- Never use descendent selectors to alter a module based on its location in the page
+- You should avoid targeting based on generic tag types such as `div` and `span`
+- You should be able to concisely summarize a module's purpose. Some modules will be for layout, others will be for stylistic purposes. When a module tries to do more than one thing, you should consider breaking it into smaller modules.
+- When possible, try to keep positioned elements that are related in the same module. This way, the module will be predictable if place in another positioned container.
+- It's a common convention to design all state classes to begin with *is-* or *has-* (e.g., `is-open is-expanded is-loading has-error`)
+- If using a preprocessor, place each CSS module into a separate file
+- Utility classes are the only place you should use the `!important` annotation
+- BEM - Block, Element, Modifier, developed by Yandex: https://en.bem.info/methodology/
+
+**Summary**
+- Break your CSS up into small, reusable modules
+- Never write styles that reach into another module and change its appearance
+- Use variant classes to provide multiple versions of the same module
+- Divide large constructs into smaller modules, build your pages by piecing together a number of modules
+- Group all rules for a module together in your stylesheet
+- Use a naming convention such as double-hypens and double-underscores to make your modules' structure easier to understand at a glance
+
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
