@@ -283,5 +283,19 @@
 - Group all rules for a module together in your stylesheet
 - Use a naming convention such as double-hypens and double-underscores to make your modules' structure easier to understand at a glance
 
+### Chapter 10. Pattern libraries
+ - Modular CSS is the key to scaling your CSS, and a pattern library is a means of keeping those modules organized.
+ - We should write CSS first; well-structured HTML will follow
+ - *semver* - Short for Semantic Versioning, a system for versioning software packages using three numbers, each separated by a period. The three numbers stand for the major, minor, and patch versions.
+
+ **Summary**
+ - Use a tool such as KSS to document and inventory your modules
+ - Use a pattern library to document markup examples, module variants, and JavaScript for your modules
+ - Develop your modules "CSS First"
+ - Consider the API your CSS defines, taking care to never break it unpredictably
+ - Version your CSS using semver
+ - Don't blindly add a CSS framework to your page; selectively take only the pieces you need
+ 
+
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
