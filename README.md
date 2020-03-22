@@ -297,5 +297,17 @@
  - Don't blindly add a CSS framework to your page; selectively take only the pieces you need
  
 
+ ## Part 4. Advanced Topics
+ ### Chapter 11. Backgrounds, shadows, and blend modes
+ - It can be easier to start with working examples [css-tricks.com](https://css-tricks.com)
+ - *Skeuomorphic design* seeks to emulate the physical word
+ - *Flat design* emphasizes vivid, uniform colors and a simpler appearance
+ - Use gradients and shadows to add the appearance of depth to the page
+ - Even basic flat designs can benefit from some subtle shadows or gradients
+ - Use gradients with explicit color stops to add stripes to an element
+ - A subtle background gradient rather than a flat color provides a little more complexity to the design
+ - Use blend modes to colorize or texture an image
+
+
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)

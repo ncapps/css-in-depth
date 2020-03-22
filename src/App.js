@@ -8,8 +8,9 @@ import React from 'react';
 // import Ch6Portfolio from './Ch6Portfolio';
 // import Ch7Modal from './Ch7Modal';
 // import Ch8Responsive from './Ch8Responsive';
-import Ch9Modular from './Ch9Modular';
+// import Ch9Modular from './Ch9Modular';
+import Ch11Backgrounds from './Ch11Backgrounds';
 
-const App = () => <Ch9Modular />;
+const App = () => <Ch11Backgrounds />;
 
 export default App;
