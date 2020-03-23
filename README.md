@@ -320,5 +320,16 @@
 - Take the time to fine-tune spacing
 - Remember that line height can impact vertical spacing
 
+### Chapter 13. Typography
+- [Google Fonts](https://fonts.google.com)
+- It's common to use two different fonts for headings and body text
+- *Serif* - A small line or "foot" at the end of a stroke in a letter
+- *Sans-serif* - Does not include a serif
+- *Typeface* refers to an entire family of fonts. Within a typeface there are multiple variants. Each variant is a *font*
+- Longer lines of text should have a larger line height. This makes it easier for the reader's eye to scan to the next line without losing their place.
+- Ideally, you should aim for line lengths that are between 45 and 75 characters per line, this is generally considered the most easily readable
+- Elements with various text sizes and margins should conform to a repeating vertical rhythm - the *baseline grid*
+- 
+
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
