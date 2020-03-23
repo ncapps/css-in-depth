@@ -297,17 +297,28 @@
  - Don't blindly add a CSS framework to your page; selectively take only the pieces you need
  
 
- ## Part 4. Advanced Topics
- ### Chapter 11. Backgrounds, shadows, and blend modes
- - It can be easier to start with working examples [css-tricks.com](https://css-tricks.com)
- - *Skeuomorphic design* seeks to emulate the physical word
- - *Flat design* emphasizes vivid, uniform colors and a simpler appearance
- - Use gradients and shadows to add the appearance of depth to the page
- - Even basic flat designs can benefit from some subtle shadows or gradients
- - Use gradients with explicit color stops to add stripes to an element
- - A subtle background gradient rather than a flat color provides a little more complexity to the design
- - Use blend modes to colorize or texture an image
+## Part 4. Advanced Topics
+### Chapter 11. Backgrounds, shadows, and blend modes
+- It can be easier to start with working examples [css-tricks.com](https:/css-tricks.com)
+- *Skeuomorphic design* seeks to emulate the physical word
+- *Flat design* emphasizes vivid, uniform colors and a simpler appearance
+- Use gradients and shadows to add the appearance of depth to the page
+- Even basic flat designs can benefit from some subtle shadows or gradients
+- Use gradients with explicit color stops to add stripes to an element
+- A subtle background gradient rather than a flat color provides a little morecomplexity to the design
+- Use blend modes to colorize or texture an image
 
+### Chapter 12. Contrast, color, and spacing
+- *Contrast* in design is a means of drawing attention to something by makingit stand out
+- Every web page should have a purpose. It may be to convey a story, collectinformation, or allow the user to complete some sort of task.
+- The use of gray rather than true black is a common practice. On a backlitcomputer screen, true black text on a pure white background (#fff) producestoo much contrast
+- [CSS color contrast checker](http://leaverou.github.io/contrast-ratio)
+- Don't over-use color, but selectively put it in the places you want to drawattention
+**Summary**
+- Use contrast selectively to draw attention to important parts of the page
+- Use HSL color to make working with colors easier and more understandable at a glance
+- Take the time to fine-tune spacing
+- Remember that line height can impact vertical spacing
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
