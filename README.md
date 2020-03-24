@@ -329,7 +329,13 @@
 - Longer lines of text should have a larger line height. This makes it easier for the reader's eye to scan to the next line without losing their place.
 - Ideally, you should aim for line lengths that are between 45 and 75 characters per line, this is generally considered the most easily readable
 - Elements with various text sizes and margins should conform to a repeating vertical rhythm - the *baseline grid*
-- 
+
+**Summary**
+- Use a font provider like Google Fonts for easy web font integration
+- Strictly limit the number of web fonts you add to the page to keep page size under control
+- Use `@font-face` rules when hosting your own fonts
+- Take the time to adjust `line-height` and `letter-spacing`
+- Use `Font Face Observer` or watch for support of `font-display` to help control loading behavior and prevent invisible text problems
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
