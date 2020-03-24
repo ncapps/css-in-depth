@@ -10,8 +10,9 @@ import React from 'react';
 // import Ch8Responsive from './Ch8Responsive';
 // import Ch9Modular from './Ch9Modular';
 // import Ch11Backgrounds from './Ch11Backgrounds';
-import Ch12Contrast from './Ch12Contrast';
+// import Ch12Contrast from './Ch12Contrast';
+import Ch14Transitions from './Ch14Transitions';
 
-const App = () => <Ch12Contrast />;
+const App = () => <Ch14Transitions />;
 
 export default App;

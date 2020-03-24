@@ -337,5 +337,12 @@
 - Take the time to adjust `line-height` and `letter-spacing`
 - Use `Font Face Observer` or watch for support of `font-display` to help control loading behavior and prevent invisible text problems
 
+### Chapter 14. Transitions
+- You can use each of the three functions in the following scenarios:
+    - *Linear* - Color changes and fade in/out effects
+    - *Decelerating* - User-initiated changes. When the user clicks a button or hovers over an element, use `ease-out`. This way, the user will see a fast, instance response to their input, easing out as the element comes to a stop
+    - *Accelerating* - System-initated changes. When content finishes loading or a timeout event triggers, use `ease-in`. This way, the element will ease in at first to draw the user's attention before the element speeds up and completes its motion.
+- 
+
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
