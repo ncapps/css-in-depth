@@ -342,7 +342,15 @@
     - *Linear* - Color changes and fade in/out effects
     - *Decelerating* - User-initiated changes. When the user clicks a button or hovers over an element, use `ease-out`. This way, the user will see a fast, instance response to their input, easing out as the element comes to a stop
     - *Accelerating* - System-initated changes. When content finishes loading or a timeout event triggers, use `ease-in`. This way, the element will ease in at first to draw the user's attention before the element speeds up and completes its motion.
-- 
+- Most transitions should be between 200 and 500 ms. Any longer and the page will feel slow
+- Use quick transition speeds (between 100ms and 300ms) for hover effects, fades, and small scaling effects 
+- Use longer transition speeds (between 300ms and 500ms) for large moves or complex timing functiosn like bounces
+
+**Summary**
+- Use transitions to smooth sudden changes in the page
+- Use an accelerating motion to catch the user's attention
+- Use a decelerating motion to show the user their action as taken effect
+- Use JavaScript to coordinate transitions with class name changes when CSS alone cannot do what you need
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
