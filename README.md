@@ -353,7 +353,17 @@
 - Use JavaScript to coordinate transitions with class name changes when CSS alone cannot do what you need
 
 ### Chapter 15. Transforms
-- 
+- Transforms are more performant than positioning or explicit sizing for transitions or animations
+- The browser *rendering pipeline* is made up of three stages
+    1. *layout* - calculates how much space each element is going to take on the screen. This happens any time you change the size or position of an element or add/remove an element to the DOM
+    2. *painting* - fills in the pixels: text is drawn, images and borders are colored. Changing a background color is less computationally intensie than changing the size of an element
+    3. *composite* - the browser takes all of the layers that have been painted in memory and draws them into the image that is displayed on screen. `opacity` and `transform` result in faster rendering time.
+
+**Summary**
+- Use transforms to scale, rotate, translate, and skew elements in two and three dimensions
+- Transforms are essential for performant transitions and animations
+- Keep the rendering pipeline in mind when building animations
+- Use a custom timing function curve to add a bounce effect to transitions
 
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
