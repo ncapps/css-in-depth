@@ -10,25 +10,25 @@ const Ch15Transforms = () => (
       <ul className="nav-links">
         <li>
           <a href="/">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/homeassistant.svg" className="nav-links__icon" />
+            <img src="home.svg" className="nav-links__icon" alt="home" />
             <span className="nav-links__label">Home</span>
           </a>
         </li>
         <li>
           <a href="/events">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlecalendar.svg" className="nav-links__icon" />
+            <img src="calendar.svg" className="nav-links__icon" alt="events" />
             <span className="nav-links__label">Events</span>
           </a>
         </li>
         <li>
           <a href="/members">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/superuser.svg" className="nav-links__icon" />
+            <img src="members.svg" className="nav-links__icon" alt="members" />
             <span className="nav-links__label">Members</span>
           </a>
         </li>
         <li>
           <a href="/about">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stellar.svg" className="nav-links__icon" />
+            <img src="star.svg" className="nav-links__icon" alt="about" />
             <span className="nav-links__label">About</span>
           </a>
         </li>
