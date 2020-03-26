@@ -34,17 +34,68 @@ const Ch15Transforms = () => (
         </li>
       </ul>
     </nav>
+
+    <main className="flyin-grid">
+      <div className="flyin-grid__item card">
+        <img src="chicken1.jpg" alt="a chicken" />
+        <h4>Mrs. Featherstone</h4>
+        <p>
+          She may be a bit frumpy, but Mrs Featherstone gets
+          the job done. She lays her largish cream-colored
+          eggs on a daily basis. She is gregarious to a fault.
+        </p>
+        <p>This Austra White is our most prolific producer.</p>
+      </div>
+      <div className="flyin-grid__item card">
+        <img src="chicken2.jpg" alt="a chicken" />
+        <h4>Hen Solo</h4>
+        <p>
+          Though the most recent addition to our flock, Hen
+          Solo is a fast favorite among our laying brood. She
+          is a sassy and suspicious hen; we frequently have to
+          follow her to find where she has hidden her loot from
+          the other hens.
+        </p>
+        <p>
+          This Snowy Easter Egger lays in delicate shades of
+          blue and green. A full dozen of her eggs costs an
+          additional $2.
+
+        </p>
+      </div>
+      <div className="flyin-grid__item card">
+        <img src="chicken3.jpg" alt="a chicken" />
+        <h4>Cluck Norris</h4>
+        <p>
+          Every brood has its brawler. Cluck Norris is our
+          feistiest hen, frequently picking fights with other
+          hens about laying territory and foraging space. Her
+          sister hens continue to hope that she will follow the
+          steps of her namesake (eventually) and focus the her
+          strength of will for good.
+        </p>
+        <p>
+          This Buff Chantecler is as robust and hardy as her
+          Canadian forebears, laying through the coldest parts
+          of the winter.
+
+        </p>
+      </div>
+      <div className="flyin-grid__item card">
+        <img src="chicken4.jpg" alt="a chicken" />
+        <h4>Peggy Schuyler</h4>
+        <p>
+          Peggy was our first and friendliest hen. She is the
+          most likely to greet visitors to the yard, and
+          frequently to be found nesting in the coop. Though
+          not a prolific layer, her output is consistent and
+          regular. You will regularly find her eggs among your
+          dozen.
+        </p>
+        <p>This Lavender Orpington lays light brown eggs.</p>
+      </div>
+    </main>
   </>
-  // <div className="card">
-  //   <img src="https://images.unsplash.com/photo-1471623817296-aa07ae5c9f47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80" alt="a chicken" />
-  //   <h4>Mrs. Featherstone</h4>
-  //   <p>
-  //     She may be a bit frumpy, but Mrs Featherstone gets the job done. She
-  //     lays her largish cream-colored eggs on a daily basis. She is gregarious
-  //     to a fault.
-  //   </p>
-  //   <p>This Austra White is our most prolific producer.</p>
-  // </div>
 );
 
 export default Ch15Transforms;

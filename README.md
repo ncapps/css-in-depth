@@ -365,5 +365,18 @@
 - Keep the rendering pipeline in mind when building animations
 - Use a custom timing function curve to add a bounce effect to transitions
 
+### Chapter 16. Animations
+- A *keyframe* refers to a specific point in an animation
+- Rules applied by an animation take precedence over other declarations
+- Adding and removing classes is the simplest way to interact with animations using JavaScript - Though there's also an API to interact with CSS animations: https://developer.mozilla.org/en-US/docs/Web/API/Animation
+- Always consider if an animation can provide useful feedback to the user
+- Library of animations: [animista.net](https://animista.net/)
+
+**Summary**
+- Use keyframe animatinos to define key points in an animation
+- Use backward and forward fill modes to making an animation begin or end seamlessly
+- JavaScript can trigger animations
+- Animations can add meaning to user interaction
+
 ## Acknowledgements
 [CSS in Depth by Keith Grant, ISBN 9781617293450](https://www.manning.com/books/css-in-depth)
